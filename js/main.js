@@ -4,7 +4,10 @@ const tesoura = document.getElementById('tesoura')
 const lagarto = document.getElementById('lagarto')
 const spock = document.getElementById('spock')  
 const pontosJ = document.getElementById('pontosJogador') 
-const pontosC = document.getElementById('pontosComputador') 
+const pontosC = document.getElementById('pontosComputador')
+const jogadorEl = document.querySelector('img[name=jogador]')
+const computadorEl = document.querySelector('img[name=computador]')
+const resultadoEl = document.querySelector('p[name=resultado]')
 
 // Pedra = 0 | Papel = 1 | Tesoura = 2 | Lagarto = 3 | Spock = 4 
 
@@ -12,15 +15,21 @@ const pontosC = document.getElementById('pontosComputador')
 
 pedra.addEventListener('click', () => {
     let computador = Math.floor(Math.random() * 5)
-    
+    jogadorEl.src = '.././img/icon-rock.svg'
     switch(computador){
         case 0: // Pedra
-
+            computadorEl.src = '.././img/icon-rock.svg'
+            resultadoEl.innerHTML = `Resultado: Empatamos...`
             break
+
         case 1: // Papel
+            computadorEl.src = '.././img/icon-paper.svg'
+            resultadoEl.innerHTML = `Resultado: Perdeu...`
 
             break
         case 2: // Tesoura
+            computadorEl.src = '.././img/icon-scissors.svg'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
         case 3: // Lagarto
@@ -38,12 +47,18 @@ papel.addEventListener('click', () => {
 
     switch(computador){
         case 0: // Pedra
-
+            computadorEl.src = '.././img/icon-rock.svg'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
+            
             break
         case 1: // Papel
+            computadorEl.src = '.././img/icon-paper.svg'
+            resultadoEl.innerHTML = `Resultado: Empatamos...`
 
             break
         case 2: // Tesoura
+            computadorEl.src = '.././img/icon-scissors.svg'
+            resultadoEl.innerHTML = `Resultado: Perdeu...`
 
             break
         case 3: // Lagarto
@@ -61,12 +76,18 @@ tesoura.addEventListener('click', () => {
 
     switch(computador){
         case 0: // Pedra
+            computadorEl.src = '.././img/icon-rock.svg'
+            resultadoEl.innerHTML = `Resultado: Perdeu...`
 
             break
         case 1: // Papel
+            computadorEl.src = '.././img/icon-paper.svg'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
         case 2: // Tesoura
+            computadorEl.src = '.././img/icon-scissors.svg'
+            resultadoEl.innerHTML = `Resultado: Empatamos...`
 
             break
         case 3: // Lagarto
