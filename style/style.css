@@ -20,7 +20,7 @@ main{
     align-items: center;
     flex-direction: column;
 }
-main h2{
+main div h2{
     margin-top: 23px;
     color: #fff;
     font-weight: bold;
@@ -29,7 +29,7 @@ main h2{
 main .game{
     display: grid;
     gap: 130px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 main .game button{
     outline: none;
@@ -39,13 +39,14 @@ main .game button{
     background-color: grey;
     cursor: pointer;
 }
-main .scores{
+main .pontos{
     display: flex;
     justify-content: space-evenly;
     width: 60%;
     text-align: center;
+    margin-top: 2%;
 }
-main .scores .score{
+main .pontos .ponto{
     background-color: grey;
     border: 3px solid orange;
     color: #fff;
@@ -54,33 +55,33 @@ main .scores .score{
     padding: 13px;
     border-radius: 13px;
 }
-main .result{
+main .resultado{
     margin-top: 32px;
     display: flex;
     text-align: center;
     color: white;
     font-family: sans-serif;
 }
-main .result h1{
+main .resultado h1{
     margin: 42px 23px;
     color: red;
 }
-main .result p{
+main .resultado p{
     margin-bottom: 10px;
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
 }
-main .result .img{
+main .resultado .img{
     background-color: grey;
     border: 4px solid blue;
     padding: 23px;
     border-radius: 10px;
 }
-main .result .img + .img {
+main .resultado .img + .img {
     margin-left: 23px;
 }
-main .resultP{
+main .resultadoT{
     margin-top: 32px;
     color: #fff;
     font-weight: bold;
@@ -96,12 +97,13 @@ main label{
 }
 
 footer{
-    margin-top: 42px;
+    margin-top: 20px;
     text-align: center;
-    width: 100%;
+    width: 50%;
     color: #fff;
     font-weight: bold;
     font-family: sans-serif;
+    margin: auto;
 }
 footer a{
     text-decoration: none;
