@@ -33,9 +33,13 @@ pedra.addEventListener('click', () => {
 
             break
         case 3: // Lagarto
+            computadorEl.src = '.././img/lagarto.png'
+            resultadoEl.innerHTML = `Resultado: Ganhou...`
 
             break
         case 4: // Spock
+            computadorEl.src = '.././img/spock.png'
+            resultadoEl.innerHTML =  `Resultado: Perdeu!`
 
             break
     }
@@ -62,9 +66,13 @@ papel.addEventListener('click', () => {
 
             break
         case 3: // Lagarto
+            computadorEl.src = '.././img/lagarto.png'
+            resultadoEl.innerHTML =  `Resultado: Perdeu!`
 
             break
         case 4: // Spock
+            computadorEl.src = '.././img/spock.png'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
     }
@@ -91,9 +99,13 @@ tesoura.addEventListener('click', () => {
 
             break
         case 3: // Lagarto
+            computadorEl.src = '.././img/lagarto.png'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
         case 4: // Spock
+            computadorEl.src = '.././img/spock.png'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
     }
@@ -105,18 +117,28 @@ lagarto.addEventListener('click', () => {
 
     switch(computador){
         case 0: // Pedra
+            computadorEl.src = '.././img/icon-rock.svg'
+            resultadoEl.innerHTML = `Resultado: Perdeu...`
 
             break
         case 1: // Papel
+            computadorEl.src = '.././img/icon-paper.svg'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
         case 2: // Tesoura
+            computadorEl.src = '.././img/icon-scissors.svg'
+            resultadoEl.innerHTML = `Resultado: Perdeu...`
 
             break
         case 3: // Lagarto
+            computadorEl.src = '.././img/lagarto.png'
+            resultadoEl.innerHTML = `Resultado: Empatamos...`
 
             break
         case 4: // Spock
+            computadorEl.src = '.././img/spock.png'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
     }
@@ -128,18 +150,28 @@ spock.addEventListener('click', () => {
 
     switch(computador){
         case 0: // Pedra
+            computadorEl.src = '.././img/icon-rock.svg'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
         case 1: // Papel
+            computadorEl.src = '.././img/icon-paper.svg'
+            resultadoEl.innerHTML = `Resultado: Perdeu...`
 
             break
         case 2: // Tesoura
+            computadorEl.src = '.././img/icon-scissors.svg'
+            resultadoEl.innerHTML =  `Resultado: Ganhou!`
 
             break
         case 3: // Lagarto
+            computadorEl.src = '.././img/lagarto.png'
+            resultadoEl.innerHTML = `Resultado: Perdeu...`
 
             break
         case 4: // Spock
+            computadorEl.src = '.././img/spock.png'
+            resultadoEl.innerHTML = `Resultado: Empatamos...`
 
             break
     }
