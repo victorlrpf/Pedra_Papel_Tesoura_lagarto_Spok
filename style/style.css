@@ -20,7 +20,7 @@ main{
     align-items: center;
     flex-direction: column;
 }
-main div h2{
+main h2{
     margin-top: 23px;
     color: #fff;
     font-weight: bold;
